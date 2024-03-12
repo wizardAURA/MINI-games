@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="rock.css">
+        <link href="rock.scss" rel="stylesheet/scss" type="text/css">
+        <!-- <link rel="stylesheet" href="src/output.css"> -->
+        <title>
+            booleans
+        </title>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+      </style>
+    </head>
+    <body>
+       
+       <div class="container">
+
+      <div class="cont1">
+       <button class="btn" onclick="
+         playGame('rock')
+        "><img src="imagees/rock-emoji.png" alt=""> </button>
+      </div>
+
+      <div class="cont2 ">
+       <button class="btn" onclick="  
+         playGame('paper')
+       "><img src="imagees/paper-emoji.png" alt=""></button>
+      </div>
+
+      <div class="cont3">
+       <button class="btn" onclick="            
+         playGame('scissors')
+       "><img src="imagees/scissors-emoji.png" alt=""></button>
+      </div>
+
+       </div>
+       <div class="res" >
+         <button class="button-49" role="button"  onclick="
+         score.win = 0,
+         score.tie = 0,
+         score.lose = 0 
+         localStorage.removeItem('score')
+         update();"
+         >
+           Reset Score 
+       </div>
+        </button>
+        <div class="Result wrapper four">
+          <div class="type">
+            <h3 class="js-result">Result </h3> 
+          </div>
+        </div>
+        
+        <p class="moves">move</p>
+        <!-- <button class="you" onclick="sb()">
+          subscribe
+        </button> -->
+        <p class="js-score"></p>
+        
+     
+        
+
+        <script src="rock.js"></script>
+    </body>
+</htm>
